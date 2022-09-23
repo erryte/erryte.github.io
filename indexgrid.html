@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="description" content="grid layout representing the web page of example1 folder">
+  <title>Grid Layout</title> 
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  color: #42628F;
+}
+
+p {
+  margin: 0.5em 0.25em;
+}
+
+h1 {
+  font-size: 1.75em;
+	border: solid #594846;
+	border-width: 2px 0;
+	padding: 0.25em;
+   text-align: center;
+  font-variant: small-caps;
+}
+
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+dl {
+  margin: 0 0.5em;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0.5em 1em 0.5em 0;
+  border-bottom: 1px dashed #7b96bc;
+}
+
+.intro {
+  font-size: 1.15em;
+  line-height: 1.3em;
+  text-align: justify;
+  margin: 0.5em;
+  font-weight: bold;
+}
+
+.header p {
+  display: none;
+}
+
+#points ul {
+  list-style-image: url('images/point.png');
+  margin: 0.5em 0 1em 0.5em;
+  padding-left: 1em;
+}
+
+#points ul li {
+  margin: 0.5em 1em;
+}
+
+#main img {max-width:100%;} 
+
+    body { display: grid; 
+          max-width: 960px;
+	       grid-template-columns: 25% auto 25%;
+		   grid-template-rows: 25px 200px auto auto auto;
+		   background: #f9f3e9;
+           color: #594846;
+	       font-family: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+	       font-size:100%;
+         }
+    
+	.navigation { grid-column-start: 1; grid-column-end: 4; grid-row-start: 1; grid-row-end: 2; background-color:#7b96bc; border-bottom: 2px solid #594846; text-align:center; }
+	
+  .navigation ul { text-align: center; list-style-type: none; }
+	.navigation ul li { text-align: center; display: inline-block; padding: 0.25em 0; margin: 0 0.40rem; } 
+  .navigation ul li a { color: #f9f3e9; font-variant: small-caps; text-decoration: none; }
+	
+	.header { grid-column-start: 1; grid-column-end: 4; grid-row-start: 2; grid-row-end: 3; background: url(images/w.png) no-repeat; }
+	
+	h1 { grid-column-start: 1; grid-column-end: 4; grid-row-start: 3; grid-row-end: 4; }
+	
+	#visit { grid-column-start: 1; grid-column-end: 2; grid-row-start: 4; grid-row-end: 5; }
+	
+	#main { grid-column-start: 2; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5; }
+	
+	#points { grid-column-start: 3; grid-column-end: 4; grid-row-start: 4; grid-row-end: 5; }
+	
+	.footer { grid-column-start: 1; grid-column-end: 4; grid-row-start: 5; grid-row-end: 6; background-color: #7b96bc; color: #f9f3e9; text-align: center; padding: .5em 0; font-style: italic; }
+  </style>    	
+</head> 
+<body> 
+<div class="navigation">
+     <ul> 
+      <li><a href="/">Home</a></li> 
+      <li><a href="ontap.html">On Tap Now</a></li>
+      <li><a href="about.html">About Us</a></li>
+	 </ul> 
+</div> 
+<div class="header"><p>[The splendid walrus surveys his domain!]</p></div> 
+<h1>The Splendid Walrus: Public House & Spirits</h1> 
+<div id="visit" class="column"> 
+  <h2>Visit Us!</h2> 
+  <dl> 
+    <dt>Location</dt> 
+    <dd>1543 SW Pretend Street<br /> 
+    Portland, OR 97201 <small>[<a href="#">Map</a>]</small></dd> 
+    
+    <dt>Hours</dt> 
+      <dd> 
+        <dl> 
+          <dt>M-F</dt> 
+          <dd>Until midnight</dd> 
+          <dt>Sa-Su</dt> 
+          <dd>Until 1AM*<p><em><small>*At least</small></em></p></dd> 
+        </dl> 
+      </dd> 
+    <dt>Call us</dt> 
+    <dd>+1 (503) 555-1212</dd> 
+  </dl> 
+  <p class="img"> 
+    <img src="images/walrusbeer.jpeg" width="230" height="179" alt="clipart of walrus drinking beer">
+  </p> 
+</div> 
+<div id="points" class="column"> <!-- right column before the center - old trick to ake it easier to handle layouts using CSS floats -->
+  <p class="intro">The Splendid Walrus pub is <em>the</em> place in downtown Portland, Ore., to do all of these things:</p> 
+    <ul> 
+      <li>Sample local and hard-to-find microbrews&mdash;always at least 20 <a href="ontap.html">rotating taps</a></li> 
+      <li>Meet friends and hang out</li> 
+      <li>Surf the Web while sipping a pint (free wifi!)</li> 
+      <li>Catch a cult flick (movie Mondays!)</li> 
+      <li>Have a favorite cocktail or sample spirits from local distilleries</li> 
+    </ul> 
+ 
+</div> 
+<div id="main" class="column"> 
+  <h2>This month's special</h2> 
+  
+  <p class="intro">25% off Jazz Hands Vodka: locally-made vodka bliss.</p> 
+  <p>Jazz Hands Vodka is the newest product from local distiller Awesomesauce. Bright and vivid, it's the perfect warm-weather treat. We've concocted some pretty wonderful custom cocktails to highlight it (try the <em title="There's Tabasco in this!">White Devil</em> or the <em>Regret</em>). Or you can go classic with our ultra-fresh Lemon Drop (made with organic citrus).</p> 
+  <img src="images/sample.jpg" alt="Tastes wonderful" /> 
+</div> 
+<div class="footer"> 
+  <p>See you soon! Love, The Splendid Walrus</p> 
+</div> 
+</body> 
+</html>

@@ -1,0 +1,206 @@
+﻿/* Reset */
+
+* {
+	margin: 0;
+	padding: 0;   
+}
+
+/**
+ * Color, typography and basic layout
+ * Colors:
+ * - #f9f3e9 -> light cream (background)
+ * - #594846 -> Dark brown (body text, rules)
+ * - #42628F -> Dark blue (link text)
+ * - #7b96bc -> Medium-light blue (navigation and footer background)
+ */
+body {
+	background: #f9f3e9;
+	color: #594846;
+	font-family: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+  font-size: 100%;
+}
+
+a, a:visited {
+  color: #42628F;
+}
+
+h1 {
+  font-size: 1.75rem;
+	border: solid #594846;
+	border-width: 2px 0;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+dt {
+  font-weight: bold;
+  border-bottom: 1px dashed #7b96bc;
+}
+
+.intro {
+  font-size: 1.15rem;
+  line-height: 1.3rem;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.navigation {
+  background-color:#7b96bc;
+  border-bottom: 2px solid #594846;
+  min-height: 25px;
+}
+
+.navigation ul {
+  text-align:center;
+}
+
+.navigation ul li {
+  text-align: center;
+}
+
+.navigation li a {
+  color: #f9f3e9;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.header p {
+  display: none;
+} 
+
+#points ul {
+  list-style-image: url('images/point.png');
+}
+
+.footer {
+  background-color: #7b96bc;
+  color: #f9f3e9;
+  text-align: center;
+  padding: .5rem 0;
+  font-style: italic;
+}
+
+/* Structure */
+@media screen and (max-width:600px) {
+  body, .navigation, #main, #points, #visit, .footer {
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .header {
+    display:none;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  h1 {
+    padding: 0.25rem 0;
+  }
+
+  dt {
+    margin: 0.5rem 0;
+  }
+
+  #main, .column {
+    margin-top: 10px;
+  }
+
+  .navigation ul li {
+    display: block;
+    width: 100%;
+    margin: 0.3rem 0;
+  } 
+  
+  #points ul {
+    margin: 0.5rem 0 1rem;
+  }
+
+  #points ul li {
+    margin: 0.5rem 0;
+  }  
+
+  .img {
+    text-align: center;
+  }
+
+  #main img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:601px) {
+  body, .navigation, .footer {
+    width: 960px;
+  }
+
+  p {
+    margin: 0.5rem 0.25rem;
+  }
+
+  h1 {
+    padding: 0.25rem;
+  }
+
+  dl {
+    margin: 0 0.5rem;
+  }
+
+  dt {
+    margin: 0.5rem 1rem 0.5rem 0;
+  }
+
+  .intro {
+    margin: 0.5rem;
+  }
+
+  .navigation ul li {
+    display: inline-block;
+    padding: 0.25rem 0;
+    margin: 0 0.40rem;  
+  }
+
+  .header {
+    width: 960px; 
+    background:url(images/w.png) no-repeat;
+    height: 200px;
+  }  
+
+  #main {
+    margin: 10px 260px 0 250px;
+    width: 460px;
+  }  
+
+  .column {
+    margin: 10px 10px 0 0;
+  }
+
+  #points {
+    width: 240px;
+    float: right;
+  }  
+
+  #points ul {
+    margin: 0.5rem 0 1rem 0.5rem;
+    padding-left: 1rem;  
+  }
+
+  #points ul li {
+    margin: 0.5rem 1rem;
+  }  
+
+  #visit {
+    width: 240px;
+    float: left;
+  }  
+
+  .header, .navigation, .footer {
+    clear: both;
+  }  
+}
