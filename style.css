@@ -20,6 +20,9 @@
 	}
 
 	body {
+		/* width: 30vw; 
+		height: 30vh;  
+		margin: 35vh auto; */
 		background: #ffffff;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 14px;
@@ -30,13 +33,17 @@
 		line-height: 21px;
 	}
 
+	/* h1 { font-size: 4vw; }
+	h2 { font-size: 2vw; } */
+
+
 	header {
 		/* sets the image background for the header on large viewport */
 		background-color: #333;
 		/* a more specific way to set a background color */
 		background-image: url(images/headerbkgd.png);
 		/* sets a background image in the header and the position it should sit */
-		object-fit: cover;
+		/* object-fit: cover; */
 	
 		background-repeat: no-repeat;
 		/* sets a background image to repeat, repeat-x, repeat-y or not at all as written in this rule */
@@ -163,6 +170,10 @@
 		margin: 0 0 10px 10px;
 		/* use this on an element (like an image) to make it float to the right of it's containing HTML element */
 	}
+
+	@media (luminosity: normal) { body { background-color: #ddd; color: #000; }} 
+	@media (luminosity: dim) { body { background-color: #444; color: #fff; }} 
+	@media (luminosity: washed) { body {background-color: #fff; color: #333; }}
 
 	/* mobile */
 	@media screen and (max-width:600px) {
