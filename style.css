@@ -164,10 +164,6 @@
 		/* use this on an element (like an image) to make it float to the right of it's containing HTML element */
 	}
 
-	@media (luminosity: normal) { body { background-color: #ddd; color: #000; }} 
-	@media (luminosity: dim) { body { background-color: #444; color: #fff; }} 
-	@media (luminosity: washed) { body {background-color: #fff; color: #333; }}
-
 	/* mobile */
 	@media screen and (max-width:600px) {
 
