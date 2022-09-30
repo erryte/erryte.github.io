@@ -18,9 +18,7 @@ img {
 	display: block; 
 }
 
-/*********
- Typography 
-*********/
+/********* Typography *********/
 
 h1 { 
 	font-size: 2rem; 
@@ -44,9 +42,8 @@ p {
 	margin-top: 0; 
 }
 
-/******
- Layout
-*******/
+/****** Layout *******/
+
 .container {
 	width: 90%;
 	max-width: 900px;
@@ -78,9 +75,8 @@ header {
 	background-position: bottom;
 }
 
-/**********
- Navigation 
- **********/
+/********** Navigation **********/
+
 nav {	
 	margin-top: .5em;
 	/*adds space between title and links*/
@@ -135,11 +131,11 @@ footer {
 	margin: 0 auto;
 	padding: 3em 0;
 	text-align: center;
+	text-justify: auto;
 }
 
-/******
- Main - Articles 
- *****/
+/****** Main - Articles *****/
+
 .article-featured {
 	border-bottom: #707070 1px solid;
 	padding-bottom: 2em;
@@ -151,7 +147,6 @@ footer {
 	flex-direction: column;
 	margin-bottom: 2em;
 }
-
 
 .article-image {
 	order: -1;
@@ -172,9 +167,7 @@ footer {
 	order: 2;
 }
 
-/**** 
-Aside - Sidebar 
-****/
+/**** Aside - Sidebar ****/
 
 .sidebar-box {
 	border: 20px solid #efefef;
@@ -191,9 +184,8 @@ Aside - Sidebar
 	padding: .5em;
 }
 
-/******
- Aside Sidebar links 
- ******/
+/****** Aside - Sidebar links ******/
+
 .list {	
 	padding: .5em;
 }
@@ -239,13 +231,12 @@ Aside - Sidebar
 } */
 
 /****** Mobile devices ******/
+
 @media screen and (max-width: 675px) {
 	.container-flex {
 		flex-direction: column;
 	}
-	header {
-		text-align: center;
-	}
+	
 	nav ul {
 		flex-direction: column;
 	}
@@ -256,6 +247,7 @@ Aside - Sidebar
 }
 
 /**** Larger devices *****/
+
 @media screen and (min-width: 676px) {
 	.container-flex {
 		flex-direction: row;
@@ -280,9 +272,4 @@ Aside - Sidebar
 		width: 30%
 	}
 
-}
-
-.clear {
-	clear: both;
-	/* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }
