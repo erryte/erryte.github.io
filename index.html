@@ -19,7 +19,7 @@
           <nav>
                 <ul>
                     <li><a href="index.html" title="Home" class="current-page">Home</a></li>
-                    <li><a href="#" title="Contact">Contact Us</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,51 +27,64 @@
 
     <div class="container container-flex">
         <main role="main"> 
-            <!-- to accommodate older IE browsers -->
+            <!-- to accommodate older browsers -->
+
             <article class="article-featured">
                 <h2 class="article-title">The Wildlife is great</h2>
-                    <p class="article-body">Wildlife includes all non-domesticated plants, animals and other organisms.</p>
-                    <p class="article-body">Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p>
+                <p class="article-body">Wildlife includes all non-domesticated plants, animals and other organisms.</p>
+                <p class="article-body">Wildlife can be found in all ecosystems. Deserts, forests, rain forests, plains, grasslands, and other areas including the most developed urban sites, all have distinct forms of wildlife.</p>
             </article>
+           
             <article class="article-recent">
-                <h2 class="article-title">Destruction</h2>
-                    <img src="images/img1.jpg" class="article-image" alt="extinct large mammal photo" />
+                <div class="article-recent-main">
+                    <h2 class="article-title">Destruction</h2>
                     <p class="article-body">Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p>
+                </div>
+                <div class="article-recent-secondary">
+                    <img src="images/img1.jpg" class="article-image" alt="extinct large mammal photo" />
+                </div>         
             </article>
+
             <article class="article-recent">
-                <h2 class="article-title">Food, pets, and traditional medicines</h2>
+                <div class="article-recent-main">
+                    <h2 class="article-title">Food, pets, and traditional medicines</h2>
                     <p class="article-body">Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
+                </div>
             </article>
         </main>
 
         <aside class="sidebar">
 
             <div class="sidebar-box">
-                <h2 class="sidebar-title">Favorite links</h2>
+                <h3 class="sidebar-title">Favorite links</h2>
                     <ul class="list">
                         <li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
                         <li><a href="http://www.worldwildlife.org/home-full.html" title="WWF">WWF</a></li>
                     </ul>
-                </div>
+            </div>
             
             <div class="sidebar-box">
                 <h2 class="sidebar-title">News</h2>
-                
-                    <p class="sidebar-recent-post">Aug/2012 - About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
+                <div class="sidebar-post">
 
-                    <p class="sidebar-recent-post">Aug/2012 - Three tigers have been found dead in India in the last week. The carcass of a ten year   old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
+                    <h3 class="sidebar-post-title">Aug/2012</h3>
+                    <p class="sidebar-recent-post">About forty Blue whales have been sighted swimming in waters 15 miles west of La Jolla.</p>
+                    
+                    <h3 class="sidebar-post-title">Aug/2012</h3>
+                    <p class="sidebar-recent-post">Three tigers have been found dead in India in the last week. The carcass of a ten year   old tigress was found in Kanha Tiger Reserve, and another female tiger was found in a very poor state of health in the same reserve. Unfortunately vets could not save her.</p>
+                </div>
             </div>
         </aside>
     </div>
           
             <!-- loading="lazy" 
             sizes="(max-width: 400px) 100vw, (min-width: 401px) 50vw" srcset="fileHD.jpg 2x, filePhone.jpg 100w, filePhoneHD.jpg 100w 2x" -->
-        <br class="clear" />
+<br class="clear" />
         <!-- this code is clearing the floats from the above divs.  See what happens when you take it away to really learn what clear does... -->
 
-        <footer>
+<footer>
             <p>We believe that we can all live together in Planet Earth</p>
-        </footer>
+</footer>
 </body>
 
 </html>
