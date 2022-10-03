@@ -36,6 +36,7 @@ p {
 	margin-top: .5em;
 }
 .subtitle { 
+	border-top: #707070 1px solid;
 	font-size: 1.25rem; 
 	margin-top: 0; 
 }
@@ -136,7 +137,7 @@ footer {
 /****** Main - Articles *****/
 
 .article-featured {
-	/* border-bottom: #707070 1px solid; */
+	border-bottom: #707070 1px solid;
 	padding-bottom: 2em;
 	margin-bottom: 2em;
 }
@@ -219,9 +220,6 @@ footer {
 	}
 	
 	.article-image { width: 100%;	}
-	/* object-fit: cover; */
-		/* position:relative; */
-		/* margin-right: 1em; */
 }
 
 /**** Larger devices *****/
@@ -245,7 +243,6 @@ footer {
 		float: left;
 		flex-direction: row;
 		justify-content: space-between;
-		/* overflow-wrap: break-word; */
 	}
 
 }
