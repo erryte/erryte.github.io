@@ -15,6 +15,7 @@ body {
 img { 
 	max-width: 100%;
 	display:block; 
+	padding-bottom: .5rem;
 }
 
 /********* Typography *********/
@@ -38,7 +39,8 @@ p {
 .subtitle { 
 	border-top: #707070 1px solid;
 	font-size: 1.25rem; 
-	margin-top: 0; 
+	margin-top: 0.5rem; 
+	padding-top: .5rem;
 }
 
 /****** Layout *******/
@@ -182,14 +184,16 @@ footer {
 	list-style-type: none;
 	font-size: .5rem;
 	margin-bottom: 1.5em;
+	
 }
 
 .list a {
 	color: #37707d;
+	text-decoration: none;
 }
 
 .list a:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .list li a {
@@ -200,7 +204,6 @@ footer {
 /****** Structure ******/
 
 /****** Mobile devices ******/
-
 @media screen and (max-width: 600px) {
 	body, header, nav, main, aside, footer {
 		width: 100%;
@@ -223,7 +226,6 @@ footer {
 }
 
 /**** Larger devices *****/
-
 @media screen and (min-width: 601px) {
 
 	.container-flex {
