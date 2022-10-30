@@ -1,0 +1,14 @@
+.accordion-item {
+    border: 1px solid rgb(255, 0, 0);
+}
+.accordion-button:not(.collapsed) {
+    color: inherit;
+    background: rgb(0, 0, 0);
+    color: #e8e8e8;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(100%);
+}
+.accordion-button:focus {
+    box-shadow: inherit;
+}
