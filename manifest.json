@@ -1,0 +1,23 @@
+{
+    "name": "shorttask",
+    "short_name": "Hybrid Apps",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2519c8",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/images/72.png",
+        "type": "image/png", "sizes": "72x72"
+      },
+      {
+        "src": "/images/192.png",
+        "type": "image/png", "sizes": "192x192"
+      },
+      {
+        "src": "/images/512.png",
+        "type": "image/png", "sizes": "512x512"
+      }
+    ]
+  }
